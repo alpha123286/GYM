@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitPro - Gym Products</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+        }
+        header {
+            background: #fffffe;
+            padding: 20px;
+            font-size: 32px;
+            font-family: 'Roboto Condensed', sans-serif;
+            color: rgb(12, 12, 12);
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        header img {
+            height: 125px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #cc7700;
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 22px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: bold;
+        }
+        .container {
+            padding: 40px 20px;
+        }
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-card {
+            background: #333;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            width: 250px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-card img {
+            width: 100%;
+            border-radius: 15px;
+            height: 250px;
+            object-fit: cover;
+        }
+        .buy-btn {
+            display: block;
+            padding: 10px 20px;
+            background: #ff6600;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-weight: bold;
+            font-family: 'Raleway', sans-serif;
+        }
+        .about, .contact {
+            text-align: center;
+            padding: 40px;
+            background: #444;
+        }
+        .about h2, .contact h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: #ff9900;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://imgs.search.brave.com/gSQujGfR-C_AHpzZrShNlLrzQ-bZCPchVs_5cSolQxE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzExLzEzLzc1Lzkw/LzM2MF9GXzExMTM3/NTkwODhfekpqT1g3/YzBjbjBMMU9KdGRr/SWkxaEp5TGJYeE1X/MmQuanBn" alt="FitPro Logo">
+         FitPro - Gym Products 
+        <img src="https://imgs.search.brave.com/gSQujGfR-C_AHpzZrShNlLrzQ-bZCPchVs_5cSolQxE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzExLzEzLzc1Lzkw/LzM2MF9GXzExMTM3/NTkwODhfekpqT1g3/YzBjbjBMMU9KdGRr/SWkxaEp5TGJYeE1X/MmQuanBn" alt="FitPro Logo">
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#gym-collection">Collection</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="about" id="about">
+        <h2>About Us</h2>
+        <p>Get the best gym equipment and supplements to boost your fitness journey.</p>
+    </div>
+    <div class="container" id="gym-collection">
+        <h2>💪 Our Gym Collection 💪</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://imgs.search.brave.com/z7tZ8Lr_hoAxoNP86yI755FnbjvDkhWXijZZit5G5H0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4x/MS5iaWdjb21tZXJj/ZS5jb20vcy16NnZv/bHk2eXU3L2ltYWdl/cy9zdGVuY2lsLzUz/Mng1MzIvcHJvZHVj/dHMvOTg4LzE2NjAy/L1BEUjI4MlgtUkZX/Uy0xMDI4cHhfXzI1/MTgwLjE2OTI3MzEy/MzUuanBnP2M9MQ" alt="Dumbbells">
+                <h3>Dumbbells Set</h3>
+                <p>High-quality adjustable dumbbells.</p>
+                <p>💰 Price: ₹2,999</p>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+            <div class="product-card">
+                <img src="https://imgs.search.brave.com/Fq5_qR0efkrTRuRDsU4wnD6B3K-1bLTFuikc96eStf0/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9zZW8vT3B0/aW11bS1OdXRyaXRp/b24tR29sZC1TdGFu/ZGFyZC0xMDAtV2hl/eS1Qcm90ZWluLVBv/d2Rlci1WYW5pbGxh/LUljZS1DcmVhbS0x/LTVsYi1UdWJfMTBh/NWM5MzYtMjhkYi00/Nzk1LTg3OTMtNDY3/YzlhM2Q4YTQ3LmUx/MDBhYWY0NTQ0NjVm/ZTk2MmYzMjU0NGNi/ZTY1NDg1LnBuZz9v/ZG5IZWlnaHQ9NTgw/Jm9kbldpZHRoPTU4/MCZvZG5CZz1GRkZG/RkY" alt="Protein Powder">
+                <h3>Whey Protein</h3>
+                <p>Premium protein for muscle growth.</p>
+                <p>💰 Price: ₹3,499</p>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+            <div class="product-card">
+                <img src="https://imgs.search.brave.com/WqqM2jIMG7_WVO4Ilky9Yz5wNIW-jYHH3MmqqG5-BYQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jb250/ZW50cy5tZWRpYWRl/Y2F0aGxvbi5jb20v/cDI2MDcwMDgvayRh/MWI1ZmEyZWI0MzI4/MTRiN2M3ZWFlZGZj/ZTRhMzYzYy9waWN0/dXJlLmpwZz9mb3Jt/YXQ9YXV0byZmPTMw/MDB4MA" alt="Treadmill">
+                <h3>Electric Treadmill</h3>
+                <p>Perfect for home workouts.</p>
+                <p>💰 Price: ₹25,999</p>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@fitpro.com</p>
+        <p>Phone: +91 9876543210</p>
+    </div>
+</body>
+</html>
